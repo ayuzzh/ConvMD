@@ -25,12 +25,12 @@ class MarkdownLexer(RegexLexer):
 		"root": [
 
 			# Headings
-			(r"######.+", Generic.Md.Heading6),
-			(r"#####.+", Generic.Md.Heading5),
-			(r"####.+", Generic.Md.Heading4),
-			(r"###.+", Generic.Md.Heading3),
-			(r"##.+", Generic.Md.Heading2),
-			(r"#.+", Generic.Md.Heading1),
+			(r"(\n|)######.+", Generic.Md.Heading6),
+			(r"(\n|)#####.+", Generic.Md.Heading5),
+			(r"(\n|)####.+", Generic.Md.Heading4),
+			(r"(\n|)###.+", Generic.Md.Heading3),
+			(r"(\n|)##.+", Generic.Md.Heading2),
+			(r"(\n|)#.+", Generic.Md.Heading1),
 
 
 			# Quote codes
