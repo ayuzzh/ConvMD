@@ -1,3 +1,8 @@
+"""
+This is for testing the lexer.
+
+"""
+
 from convmd import lexer
 
 if __name__ == "__main__":
