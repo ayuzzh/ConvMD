@@ -1,4 +1,4 @@
-from md2htmlconv import lexer
+from convmd import lexer
 
 if __name__ == "__main__":
 	l = lexer.MarkdownLexer()

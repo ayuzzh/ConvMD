@@ -1,10 +1,10 @@
 from setuptools import setup, find_packages
 
 VERSION = '0.0.1'
-DESCRIPTION = 'Tool for converting MD into HTML'
+DESCRIPTION = 'Tool for converting Markdown into HTML'
 
 setup(
-        name="MD2HTMLconv",
+        name="convmd",
         version=VERSION,
         author="Ayush K M",
         author_email="kmayushkm@gmail.com",
@@ -12,7 +12,7 @@ setup(
         packages=find_packages(),
         install_requires=["pygments"],
 	license="GPL-3.0",
-	url="https://github.com/ayuzzh/MD2HTMLconv",
+	url="https://github.com/ayuzzh/ConvMD",
 	keywords=['python', 'markdown', 'html'],
         classifiers= [
             "Development Status :: 3 - Alpha",
