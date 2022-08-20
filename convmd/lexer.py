@@ -42,6 +42,9 @@ class MarkdownLexer(RegexLexer):
 			(r"((\*\*)|(__)).+((\*\*)|(__))", Generic.Md.Strong),
 			(r"((\*)|(_)).+((\*)|(_))", Generic.Md.Italics),
 
+			# Striked text
+			(r"\~\~.+\~\~", Generic.Md.Striked),
+
 			# Links
 			(r"\[.+\]( +|)\(.+\)", Generic.Md.Link),
 
