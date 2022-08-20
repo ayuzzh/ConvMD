@@ -34,6 +34,8 @@ text
 ##### Heading5
 ###### Heading6
 
+~~Striked Text~~
+
 """
 
 	for i in l.get_tokens(text):
