@@ -10,7 +10,7 @@ setup(
         author_email="kmayushkm@gmail.com",
         description=DESCRIPTION,
         packages=find_packages(),
-#        install_requires=["pygments"],
+        install_requires=["pygments"],
 	license="GPL-3.0",
 	url="https://github.com/ayuzzh/MD2HTMLconv",
 	keywords=['python', 'markdown', 'html'],
