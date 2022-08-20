@@ -1,29 +1,8 @@
-"""
-
-**Features**
-
-1. Quote Code: Working, not syntax highlighter support added.
-
-2. Quotes: Working
-
-3. Links: working
-
-4. Headings: Not implemented
-
-6. Bold and Italics: working
-
-7. Subscript and Superscript: working
-
-8. Html break tag: workin
-
-"""
-
-
 from pygments.lexer import RegexLexer, bygroups, include
 
 from pygments.token import *
 
-class MarkdownLexerTest(RegexLexer):
+class MarkdownLexer(RegexLexer):
 
 	tokens = {
 		"root": [
@@ -54,16 +33,3 @@ class MarkdownLexerTest(RegexLexer):
 			(r".+", Generic.Md.Text),
 		]
 	}
-
-
-# Testing.
-l = MarkdownLexerTest()
-
-text = """
-
-[hellwxw  o]  (x  wcshis)
-
-"""
-
-for i in l.get_tokens(text):
-	print(i)
