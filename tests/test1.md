@@ -17,8 +17,7 @@ text
 
 > Quote
 
-<sub> subscript </sub>
-<sup> superscript </sup>
+<sub> subscript </sub>Text<sup> superscript </sup>
 
 
 **Bold**
