@@ -25,9 +25,9 @@ text
 *Italics*
 ***Bold and Italics***
 
-[http://example.com]( Link )
+[ Link ](https://google.com)
 
-![http://example.com/example.png]( This is an Image )
+![ Image ](https://avatars.githubusercontent.com/u/80582425?s=96&v=4)
 
 # Heading1
 ## Heading2
