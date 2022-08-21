@@ -5,10 +5,8 @@ TODO:
 1. Support for custom tags
 2. Support for Mathematical equations
 3. Support for table
-4. Support for Images
-5. Support for lists and nested lists
-6. Support for comments
-7. Support for Foot Notes
+4. Support for lists and nested lists
+5. Support for Foot Notes
 
 It contains lexer which uses pygments for generating tokens. Previously
 I tried using ply for lexing but was quite complicated to implement and
@@ -25,6 +23,8 @@ class MarkdownLexer(RegexLexer):
 
 	tokens = {
 		"root": [
+			# Comments
+			(r"\<\!--((.|\n)(?!-\>))*--\>", Generic.Md.Comments),
 
 			# Headings
 			(r"(\n|)######.+", Generic.Md.Heading6),
@@ -47,7 +47,8 @@ class MarkdownLexer(RegexLexer):
 			# Striked text
 			(r"\~\~.+\~\~", Generic.Md.Striked),
 
-			# Links
+			# Links and Images
+			(r"\!\[.+\]( +|)\(.+\)", Generic.Md.Image),
 			(r"\[.+\]( +|)\(.+\)", Generic.Md.Link),
 
 			# Quote

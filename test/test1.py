@@ -8,6 +8,12 @@ from convmd import lexer
 if __name__ == "__main__":
 	l = lexer.MarkdownLexer()
 	text = """
+
+<!-- This
+is
+actually
+-a comment-->
+
 `Single line code`
 
 ```
@@ -31,6 +37,8 @@ text
 ***Bold and Italics***
 
 [http://example.com]( Link )
+
+![http://example.com/example.png]( This is an Image )
 
 # Heading1
 ## Heading2
