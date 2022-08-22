@@ -5,7 +5,7 @@ TODO:
 1. Support for custom tags
 2. Support for Mathematical equations
 3. Support for table
-4. Support for lists and nested lists
+4. Support for Nested lists
 5. Support for Foot Notes
 
 It contains lexer which uses pygments for generating tokens. Previously
@@ -25,6 +25,10 @@ class MarkdownLexer(RegexLexer):
 		"root": [
 			# Comments
 			(r"\<\!--((.|\n)(?!-\>))*--\>", Generic.Md.Comments),
+
+			# Lists
+			(r"(- (.|(\n)(?!\n))+)+", Generic.Md.BulletList),
+			(r"(\d\. (.|(\n)(?!\n))+)+" , Generic.Md.List),
 
 			# Headings
 			(r"(\n|)######.+", Generic.Md.Heading6),

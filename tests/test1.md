@@ -36,3 +36,11 @@ text
 ###### Heading6
 
 ~~Striked Text~~
+
+- Book
+- Bag
+- Home work
+
+1. Pizza
+2. Burger
+3. Mac & Cheese
